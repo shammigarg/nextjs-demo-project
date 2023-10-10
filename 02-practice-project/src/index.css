@@ -9,3 +9,11 @@ html {
 body {
   margin: 0;
 }
+
+.card {
+  width:40rem;
+  height:auto;
+  background-color: rgb(203, 186, 174);
+  border-radius: 5px;
+  border: 1px solid #0d0c0c;
+}
