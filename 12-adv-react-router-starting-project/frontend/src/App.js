@@ -7,9 +7,9 @@ import EventDetailPage, {
   action as deleteEventAction,
 } from './pages/EventDetail';
 import EventsPage, { loader as eventsLoader } from './pages/Events';
-import EventsRootLayout from './pages/EventsRoot';
+import EventLayout from './pages/EventLayout';
 import HomePage from './pages/Home';
-import NewEventPage from './pages/NewEvent';
+import NewEventPage from './NewEvent';
 import RootLayout from './pages/Root';
 import { action as manipulateEventAction } from './components/EventForm';
 import NewsletterPage, { action as newsletterAction } from './pages/Newsletter';
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       {
         path: 'events',
-        element: <EventsRootLayout />,
+        element: <EventLayout />,
         children: [
           {
             index: true,
